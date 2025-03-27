@@ -11,18 +11,6 @@ body {
     background-color: white;
 }
 
-.wrapper::before {
-    box-sizing: border-box;
-    display: inline-block;
-    content:"x";
-    text-align:right;
-    /* padding-right:10px; */
-    background-color: red;
-    width:90%;
-    margin:auto;
-    position: absolute;
-    transform: translateY(-15px);
-}
 
 .dis {
     display:grid;
