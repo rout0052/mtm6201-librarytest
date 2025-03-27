@@ -1,0 +1,80 @@
+body {
+    background-image: url("IMG_1212.png");
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+}
+
+.wrapper::before {
+    box-sizing: border-box;
+    display: inline-block;
+    content:"x";
+    text-align:right;
+    /* padding-right:10px; */
+    background-color: red;
+    width:90%;
+    margin:auto;
+    position: absolute;
+    transform: translateY(-15px);
+}
+
+.dis {
+    display:grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+}
+
+.browser {
+    padding: 10px;
+    /* margin:10px; */
+    border: 3px solid purple;
+}
+
+.browser::before {
+    box-sizing: border-box;
+    font-size:14pt;
+    color:white;
+    border: 3px solid purple;
+    display: inline-block;
+    content:"\2013   \2610   \2613";
+    align-self:flex-end;
+    text-align:right;
+    background-color: purple;
+    width:calc((90% - 29px) /2);
+    margin:auto;
+    position: absolute;
+    transform: translate(-12.5px, -30px);
+}
+
+#masonery {
+    display:grid;
+    gap: 10px;
+    grid-template-areas:  'rantly rantly autumns autumns'
+                          'rylan rylan autumns autumns'
+                          'rylan rylan autumns autumns'
+                          'rylan rylan board board';
+    
+    margin: 10px;
+}
+
+div#masonery > .brick:nth-child(1) {
+    grid-area:rantly;
+    justify-self: right;
+}
+div#masonery > .brick:nth-child(2) {
+    grid-area:autumns;
+}
+div#masonery > .brick:nth-child(3) {
+    grid-area:rylan;
+    justify-self: right;
+}
+div#masonery > .brick:nth-child(4) {
+    grid-area:board;
+}
