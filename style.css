@@ -2,7 +2,7 @@
     --red: #ff0000;
     --primary: var(--red);
 
-    /* Uncomment the below property to see -  */
+    /* Uncomment the below property to see (--bs-primary-rgb is the variable used in bg-primary - when applied, this seems to mix it up and just erases the colour entirely on bg-primary? but works fine for the body copy if --bs-primary-rgb is declared */
     /* --bs-primary-rgb: var(--primary); */
 
 }
@@ -16,6 +16,7 @@ body {
     background-image: url("images/IMG_1212.png");
     background-attachment: fixed;
     box-sizing: border-box;
+    color: var(--bs-primary-rgb);
 }
 
 .wrapper {
