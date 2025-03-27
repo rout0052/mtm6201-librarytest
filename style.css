@@ -7,10 +7,10 @@
 
 }
 
-/* Testing modifying the class the old fashion way - does not work, not adjusting the background color. *I think* (<em> on 'think') it might have to do with the !important in the source CSS  */
-.bg-primary {
+/* Uncomment below property to see: Testing modifying the class the old fashion way - does not work, not adjusting the background color. *I think* (<em> on 'think') it might have to do with the !important in the source CSS  */
+/* .bg-primary {
     background-color: purple;
-}
+} */
 
 body {
     background-image: url("images/IMG_1212.png");
