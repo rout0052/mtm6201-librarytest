@@ -1,3 +1,17 @@
+:root {
+    --red: #ff0000;
+    --primary: var(--red);
+
+    /* Uncomment the below property to see -  */
+    /* --bs-primary-rgb: var(--primary); */
+
+}
+
+/* Testing modifying the class the old fashion way - does not work, not adjusting the background color. *I think* (<em> on 'think') it might have to do with the !important in the source CSS  */
+.bg-primary {
+    background-color: purple;
+}
+
 body {
     background-image: url("IMG_1212.png");
     background-attachment: fixed;
@@ -35,13 +49,13 @@ body {
     align-self:flex-end;
     text-align:right;
     background-color: purple;
-    width:calc((90% - 29px) /2);
+    width:calc((90% - 31px) /2);
     margin:auto;
     position: absolute;
-    transform: translate(-12.5px, -30px);
+    transform: translate(-13px, -30px);
 }
 
-#masonery {
+#masonry {
     display:grid;
     gap: 10px;
     grid-template-areas:  'rantly rantly autumns autumns'
@@ -52,17 +66,17 @@ body {
     margin: 10px;
 }
 
-div#masonery > .brick:nth-child(1) {
+div#masonry > .brick:nth-child(1) {
     grid-area:rantly;
     justify-self: right;
 }
-div#masonery > .brick:nth-child(2) {
+div#masonry > .brick:nth-child(2) {
     grid-area:autumns;
 }
-div#masonery > .brick:nth-child(3) {
+div#masonry > .brick:nth-child(3) {
     grid-area:rylan;
     justify-self: right;
 }
-div#masonery > .brick:nth-child(4) {
+div#masonry > .brick:nth-child(4) {
     grid-area:board;
 }
